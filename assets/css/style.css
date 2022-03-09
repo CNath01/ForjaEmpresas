@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rufous-color: #a40101;
+    --viriGreen-color: #2ca3ab;
+    --silver-color: #c4c4c4;
+    --safOranBlOr-color: #f3610e;
+    --spaceCadet-color: #1d1b45;
+    --CadetC-color: rgb(11, 87, 149);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+/*------------------------------ |HEADER| -----------------------------*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-iconHead{
+    background-color: var(--safOranBlOr-color);
+    padding: 6px 6px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    font-weight: lighter;
+}
+
+.tel{
+    display: flex;
+    margin: 0 1rem 0 29rem;
+    align-items: center;
+    
+}
+
+.tel p{
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-bottom: 0.1rem;
+    font-weight: 300;
+    width: 8rem;
+    
+}
+
+.ubi{
+    display: flex;
+    margin: 2rem 0 2rem 4rem;
+    align-items: center;
+}
+
+.ubi p{
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-bottom: 0.1rem;
+    font-weight: 300;
+    width: 20rem;
+
+}
+
+.bs{
+    margin-top: 2rem;
+
+}
+
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 9.5rem;
+    height: 2rem;
+    background-color: var(--CadetC-color);
+    border-style: none;
+    border-radius: 15rem;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+
+.btn-login a{
+    margin:20px 0;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.btn-login:hover{
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 0.1rem 0.6rem 1rem 3rem;
+}
+
+.logoForja{
+    padding-left: 10px;
+    padding-right: 1rem;
+}
+
+.lE{
+    width: 60%;
+    height: 50%;
+    padding-left: 100px;
+}
+
+.fa-icon{
+    color: var(--safOranBlOr-color);
+}
+/*----------------------------------- |SECCION 1|--------------------------------------*/
+.seccion1{
+    background-image: url("../img/2.\ medico.png"); 
+    background-size:cover;
+    height:320px;
+    padding: 9rem 1rem 1rem 10rem;
+    flex-direction: column;
+}
+
+.seccion1 h2{
+    font-size:40px;
+    font-weight: 300;
+    font-weight: 500;
+    color: rgb(216, 118, 53);
+    letter-spacing: -2px;
+    padding-left: 1rem;
+}
+
+.seccion1 h1{
+    font-size:50px;
+    font-weight: 400;
+    padding: 0 10rem;
+    margin-top: 2px;
+}
+.seccion1 .btn-login{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 0.2rem;
+    margin-left: 12rem;
+    
+    padding-left: 12px;
+}
+
+#franjaN{
+    width: 100%;
+    height: 100%;  
+    margin: 0;
+}
+
+/*----------------------------------- |SECCION 2|--------------------------------------*/
+
+.seccion2{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url("../img/4.\ covid.jpeg");
+    background-size:cover;
+    height:320px;
+    display: flex;
+    margin: 0;
+    padding: 2rem 2rem;
+    
+}
+.seccion2 h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--CadetC-color);
+}
+
+.fa-flecha{
+    background-color: var(--rufous-color);
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: white;
+    margin: 2px 1rem;
+}
+
+
+.fa-qs{
+    background-color: var(--rufous-color);
+    border-radius: 50%;
+    padding: 18px 12px;
+    color: white;
+    margin: 2px 1rem;
+}
+
+
+.tabla1{
+    width: 60%;
+}
+
+.tabla1 ul li, .tabla2 p{
+    margin: 1rem 5rem;
+    font-size: 17px;
+    font-weight: 200;
+    list-style: none;
+    vertical-align: center;
+
+}
+
+.fa-lg{
+    margin: 0.5rem 1rem;
+    color: rgb(177, 0, 0);
+ }
+
+.tabla2{
+    width: 50%;
+}
+
+.tabla2 img{
+    width: 20%;
+    display:block;
+    margin:auto;
+}
+
+.tabla2 a{
+    margin-left: 10rem;
+}
+
+.qst{
+    background-color: rgb(51, 51, 51);
+    margin-bottom: 1rem;
+}
+
+.qst p{
+    background-color: rgb(27, 27, 36);
+    margin-bottom: 0.8rem ;
+    padding: 0.5rem;
+    
+}
+
+.qst a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer1{
+    background-color: black;
+    padding: 0px 10px 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: top;
+    font-size: 13px;
+}
+/*--------------------------- |LOGIN|-------------------------------*/
+#loggg{
+    background-image: url("../img/10.png");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+#logg .btn-login{
+    
+    background-color: var(--spaceCadet-color);
+    border-color: #2CA3AB;
+    border-style: solid;
+    padding: auto 1rem auto auto;
+    border-radius: 10px;
+    margin: 1.5rem 50rem 1rem 50rem; 
+}
+#log{
+    background-color: white;
+    align-items: center;
+    margin: 1.5rem 28rem;
+    width: 510px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+
+.login .logo{
+    background-color: rgb(173, 230, 206);
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+.login .logo img{
+    display:block;
+    margin:auto;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-group a{
+    color: black;
+}
+
+.form-label{
+    margin: 0.5rem;
+    font-size: 20px;
+}
+
+.form-input{
+    border: 2px solid rgb(173, 230, 206);
+    background-color: rgba(173, 230, 211, 0.459);
+    width: 20rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-olvc{
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.btn-naranja{
+    border-color: var(--spaceCadet-color);
+    border-style: solid;
+    background-color: var(--safOranBlOr-color);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin: 0.3rem 7.5rem;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn-naranja a{
+    text-decoration: none;
+    color:#ffffff;
+}
+/*-------------------- |DASHBOARD| ---------------------*/
+.main{
+    display: flex;
+}
+
+.izq{
+    padding: 3rem 0;
+    width: 25%;
+    height: 560px;
+    background-color: rgb(22, 22, 80);
+}
+.izq img{
+    margin: 2rem 1.5rem 2rem 1rem;
+}
+
+.botones{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+    
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+.btn3{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+
+
+
+/* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
+.dere{
+    background-image: url(/img/Desktop\ -\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    overflow: hidden;
+}
+
+.sesion{
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    width: 220px;
+    background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
+    margin: 0 47rem;
+    border-radius: 6px;
+}
+
+
+.fa-user1{
+    margin: 0 0.5rem;
+    border: 3px solid rgb(245, 119, 35);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.sesion p{
+    margin-top: 1rem;
+}
+
+.form-group{
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.form-group h1{
+    font-weight: 400;
+    color:rgb(199, 81, 2);
+}
+
+input{
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+}
+
+.rellenar{
+    margin-top: 4rem;
+}
+
+.fa-iconos{
+    background-color: rgb(22, 22, 80);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    border: 3px solid #2bb6c0;
+    border-radius: 5px;
+}
+
+.form-input{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 300px;
+}
+
+
+
+
+
+
+
