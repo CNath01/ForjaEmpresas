@@ -274,6 +274,7 @@ header{
     background-size: cover;
     justify-content: center;
     align-items: center;
+
 }
 #logg .btn-login{
     
@@ -310,30 +311,30 @@ header{
     margin:auto;
 }
 
-.form{
+.form1{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
 }
 
-.form-group {
+.form1 .form-group {
     display:flex;
     flex-direction: column;
     margin-bottom: 10px;
     align-items: center;
 }
 
-.form-group a{
+.form1 .form-group a{
     color: black;
 }
 
-.form-label{
+.form1 .form-label{
     margin: 0.5rem;
     font-size: 20px;
 }
 
-.form-input{
+.form1 .form-input{
     border: 2px solid rgb(173, 230, 206);
     background-color: rgba(173, 230, 211, 0.459);
     width: 20rem;
@@ -342,7 +343,7 @@ header{
     outline: none;
 }
 
-.form-olvc{
+.form1 .form-olvc{
     margin-top: 5px;
     font-size: 13px;
 }
@@ -369,13 +370,14 @@ header{
 /*-------------------- |DASHBOARD| ---------------------*/
 .main{
     display: flex;
+    margin: bottom 0; 
 }
 
 .izq{
     padding: 3rem 0;
     width: 25%;
     height: 560px;
-    background-color: rgb(22, 22, 80);
+    background-color: var(--spaceCadet-color);
 }
 .izq img{
     margin: 2rem 1.5rem 2rem 1rem;
@@ -390,7 +392,7 @@ header{
 .btn1{
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border: 4px solid rgb(218, 106, 32);
+    border: 4px solid var(--safOranBlOr-color);
     border-radius: 5px;
     
 }
@@ -416,14 +418,14 @@ header{
 .btn2{
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border: 4px solid rgb(218, 106, 32);
+    border: 4px solid var(--safOranBlOr-color);
     border-radius: 5px;
 }
 
 .btn3{
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border: 4px solid rgb(218, 106, 32);
+    border: 4px solid var(--safOranBlOr-color);
     border-radius: 5px;
 }
 
@@ -431,11 +433,11 @@ header{
 
 
 /* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
-.dere{
-    background-image: url(/img/Desktop\ -\ 1.png);
+.dere{    
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     overflow: hidden;
+    z-index: 2;
 }
 
 .sesion{
@@ -460,17 +462,17 @@ header{
     margin-top: 1rem;
 }
 
-.form-group{
+.dere .form-group{
     margin: 4rem 0;
     text-align: center;
 }
 
-.form-group h1{
+.dere .form-group h1{
     font-weight: 400;
     color:rgb(199, 81, 2);
 }
 
-input{
+.dere input{
     background-color: transparent;
     padding: 0.6rem 1rem;
 }
@@ -488,16 +490,495 @@ input{
     border-radius: 5px;
 }
 
-.form-input{
+.dere .form-input{
     border-top: 0;
     border-right: 0;
     border-left: 0;
     width: 300px;
 }
+.main .footer2 img{
+    
+    bottom: 0;
+    width: 40px;
+    height: 40px;  
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: rgb(63, 62, 62);
+}
+
+.logo{
+    width: 88%;
+    margin: 1rem 0;
+}
+
+.iconos{
+    width: 12%;
+    margin: 1rem 0;
+
+}
+
+.fa-house-user{
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.fa-power-off{
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.franjaNaranja{
+    background-image: url(/img/12.\ franja.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70px;
+    border-bottom: 5px solid rgb(2, 190, 190);
+}
+
+/* :::::::::::::::::::::::::::::::::::::: PRIMERA SECCION :::::::::::::::::::::::::::::::::::::::::::::::: */
+.encabezado{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+}
+
+.encabezado button{
+    height: 30%;
+    padding: 0.5rem 1rem;
+}
+.encabezado h1{
+    padding: 1rem 15rem;
+    font-weight: 500;
+    color: rgb(22, 22, 80);
+}
 
 
+.fa-iconos{
+    background-color: rgb(22, 22, 80);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    border: 3px solid #2bb6c0;
+    border-radius: 10px;
+}
 
 
+.form-input{
+    border: 2px solid aqua;
+    padding: 0 10px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.iconos a{
+    color: black;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: TABLA :::::::::::::::::::::::::::::::::::::::: */
+table.colapsado {
+    border-collapse: collapse;
+    border-color: #2CA3AB;
+    border-style: solid;
+    margin: 0 5rem;
+}
+
+table{
+    overflow: hidden;
+}
 
 
+tr, td, th{
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 1rem 2rem;
+    background-color: rgb(22, 22, 80);
+    color: white;
+    border: 5px solid #2CA3AB;
+    font-weight: 500;
+}
+
+td{
+    padding: 0.8rem 2rem;
+}
+
+table button{
+    padding: 0.5rem 1rem;
+}
+
+.fa-btn{
+    margin-left: 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-azul{
+    background-color: #2bb6c0;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.btn-rojo{
+    background-color: rgb(185, 2, 2);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.encabezado button{
+    background-color: rgb(214, 102, 27);
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.encabezado button a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-user-plus{
+    margin-left: 0.5rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2{
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: Raleway;
+    
+}
+
+.pie-pagina{
+    margin-top: 3rem;
+}
+header{
+    display: flex;
+    background-color: rgb(63, 62, 62);
+}
+
+.logo{
+    width: 88%;
+    margin: 1rem 0;
+}
+
+.iconos{
+    width: 12%;
+    margin: 1rem 0;
+
+}
+
+.fa-house-user{
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.fa-power-off{
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.franjaNaranja{
+    background-image: url(/img/12.\ franja.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70px;
+    border-bottom: 5px solid rgb(2, 190, 190);
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::: ENCABEZADO :::::::::::::::::::::::::::::::::::::::::::::::: */
+.cuadroAfuera button{
+    margin: 1rem 35rem;
+    background-color: rgb(214, 102, 27);
+    height: 30%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.cuadroAfuera a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::: TITULO GENERAL :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.titulo{
+    background-color: rgb(22, 22, 80);
+    color: white;
+    margin: 0 0.3rem;
+    width: 1345px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.titulo h1{
+    font-weight: 400;
+    padding: 5px 0;
+   
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::: RECUADROS  :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.cuadroAfuera{
+    border: 2px solid gray;
+    margin: 0 0.3rem;
+    padding: 3rem;
+    width: 1242px;
+}
+
+.dentro{
+    background-color: rgb(199, 198, 198);
+    border: 2px solid rgb(134, 133, 133);
+    border-radius: 10px;
+    padding: 30px 12px;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::: CONTENIDO  :::::::::::::::::::::::::::::::::::::::::::::::: */
+.seccion1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuadro1 input{
+    width: 200px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.cuadro1{
+    margin-left: 1rem;
+    width: 20%;
+}
+
+.cuadro2 input{
+    padding: 0.5rem;
+    font-size: 15px;
+    width: 200px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+}
+
+.titulo2{
+    border: 2px solid #46737F;
+    background-color: #62A1AA;
+    display: flex;
+    padding: 10px 3rem;
+    color: white;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.titulo2 p{
+    margin-left: 30rem;
+    margin-top: 7px;
+    
+}
+
+.fa-titulos{
+    color: black;
+}
+
+.titulo3{
+    margin: 1rem 0;
+    border: 2px solid #46737F;
+    background-color: #62A1AA;
+    display: flex;
+    padding: 10px 3rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.titulo3 p{
+    margin-left: 28rem;
+    margin-top: 7px;
+}
+
+.titulo4{
+    margin: 1rem 0;
+    border: 2px solid #46737F;
+    background-color: #62A1AA;
+    display: flex;
+    padding: 10px 3rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.titulo4 p{
+    margin-left: 30rem;
+    margin-top: 7px;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: DATOS DEL PACIENTE :::::::::::::::::::::::::::::::::::::::: */
+.fila1{
+    display: flex;
+}
+
+.cuadro1-1 input{
+    width: 550px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-1{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+}
+
+.cuadro1-2 input{
+    width: 550px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-2{
+    margin-top: 1rem;
+    width:20%;
+}
+
+.cuadro1-10{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.cuadro1-12 input{
+    display: flex;
+    width: 550px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.cuadro1-12{
+    margin-top: 1rem;
+    width:70%;
+    margin-right: 2.3rem;
+    margin-left: 1rem;
+}
+
+.fila2{
+    display: flex;
+}
+
+.cuadro1-select{
+    margin-top: 1rem;
+}
+
+select {
+    width: 570px;
+    position: relative;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    border: 2.8px solid #62A1AA;
+    font-weight: 300;   
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: INFO DEL CONTACTO :::::::::::::::::::::::::::::::::::::::: */
+.select1{
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.select2{
+    
+    margin-bottom: 0.5rem;
+}
+
+.fila3{
+    display: flex;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: estado de salud :::::::::::::::::::::::::::::::::::::::: */
+.salud{
+    display: flex;
+}
+
+#preexistencias{
+    width: 380px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cuadro1-alergias input{
+    width: 340px;
+    height: fit-content;
+    border: 2.8px solid #62A1AA;
+    border-radius: 3px;
+    padding: 0.5rem;
+    
+}
+.cuadro1-alergias{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 50%;
+}
+
+.texto1{
+    margin: 0.5rem;
+}
+
+.btn-si-no{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2{
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: Raleway;
+    
+}
+
+.pie-pagina{
+    margin-top: 3rem;
+}
 
