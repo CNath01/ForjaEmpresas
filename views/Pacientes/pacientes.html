@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="es-Es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forja Empresas</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3377be9db6.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="../../assets/img/forja-favicon.png">
-        <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forja Empresas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3377be9db6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../../assets/img/forja-favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+</head>
+
 <body>
-    <header>
+    <header id="headerpac">
         <div class="logo">
             <img src="../../assets/img/0. logoforja.png">
         </div>
 
         <div class="iconos">
             <a href="../dashboard.html"><i class="fa-solid fa-house-user fa-2x"></i></a>
-            <a href="../login.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
+            <a href="../../views/index1.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
         </div>
+
     </header>
 
-    <section class="franjaNaranja"></section>
+    <section class="franjaNaranja2"></section>
 
     <main>
-        <section class="encabezado">
-            <button><a href="newU.html">Agregar<i class="fa-solid fa-user-plus"></i></button></a> 
-            <h1><u>PACIENTES</u></h1>
+        <section class="enc">
+            <div class="botonpa">
+                <button><a href="newU.html">Agregar<i class="fa-solid fa-user-plus"></i></button></a>
+            </div>
             <div class="rellenar">
                 <label for="documento" class="form-documento"></label>
-                <input type="text" name="usuario" id="usuario" class="form-input" placeholder="Digite el numero de documento">
+                <input type="text" name="usuario" id="usuario" class="form-input" placeholder="Numero de documento">
                 <i class="fa-solid fa-magnifying-glass fa-iconos"></i>
             </div>
         </section>
-
+        <div class="pacient">
+            <h1><u>PACIENTES</u></h1>
+        </div>
         <section class="tabla">
-            <table class="colapsado" border="3">
-                <!------------------------------------PRIMERA CELDA------------------------------------>
+            <table class="tablaxd" border="1">
                 <tr>
                     <th># DE REGISTRO</th>
                     <th># DE DOCUMENTO</th>
@@ -48,7 +55,6 @@
                     <th>EDAD</th>
                     <th>ACCIONES</th>
                 </tr>
-                <!------------------------------------SEGUNDA CELDA------------------------------------>
                 <tr>
                     <td>1111</td>
                     <td class="nd">456231</td>
@@ -60,7 +66,6 @@
                         <button class="btn-rojo">Eliminar<i class="fa-solid fa-rectangle-xmark fa-btn"></i></button>
                     </td>
                 </tr>
-                <!------------------------------------TERCERA CELDA------------------------------------>
                 <tr>
                     <td>2120236</td>
                     <td class="nd">589533989</td>
@@ -72,7 +77,6 @@
                         <button class="btn-rojo">Eliminar<i class="fa-solid fa-rectangle-xmark fa-btn"></i></button>
                     </td>
                 </tr>
-                <!------------------------------------CUARTA CELDA------------------------------------>
                 <tr>
                     <td>152552</td>
                     <td class="nd">573853703</td>
@@ -84,7 +88,6 @@
                         <button class="btn-rojo">Eliminar<i class="fa-solid fa-rectangle-xmark fa-btn"></i></button>
                     </td>
                 </tr>
-                <!------------------------------------QUINTA CELDA------------------------------------>
                 <tr>
                     <td>121212</td>
                     <td class="nd">525925745</td>
@@ -96,7 +99,6 @@
                         <button class="btn-rojo">Eliminar<i class="fa-solid fa-rectangle-xmark fa-btn"></i></button>
                     </td>
                 </tr>
-                <!------------------------------------SEXTA CELDA------------------------------------>
                 <tr>
                     <td>121213</td>
                     <td class="nd">250049358</td>
@@ -114,9 +116,9 @@
     </main>
 </body>
 
-<footer class="pie-pagina">
-    <div class="grupo-2">
-        <small>&copy;2021  FORJA EMPRESAS </small>
+<footer class="footer">
+    <div class="footer1">
+        <small>&copy;2021 FORJA EMPRESAS </small>
     </div>
 </footer>
 

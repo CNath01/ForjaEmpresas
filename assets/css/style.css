@@ -429,10 +429,6 @@ header{
     border-radius: 5px;
 }
 
-
-
-
-/* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
 .dere{    
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -442,9 +438,10 @@ header{
 
 .sesion{
     display: flex;
+    background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
+
     padding: 0.5rem 0.5rem;
     width: 220px;
-    background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
     margin: 0 47rem;
     border-radius: 6px;
 }
@@ -459,7 +456,7 @@ header{
 }
 
 .sesion p{
-    margin-top: 1rem;
+    margin-top: 1rem; 
 }
 
 .dere .form-group{
@@ -468,17 +465,22 @@ header{
 }
 
 .dere .form-group h1{
+    font-size: 30px;
     font-weight: 400;
-    color:rgb(199, 81, 2);
+    color:var(--safOranBlOr-color);
+    
 }
 
 .dere input{
     background-color: transparent;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-.rellenar{
+.rellenar1{
     margin-top: 4rem;
+    
 }
 
 .fa-iconos{
@@ -503,74 +505,87 @@ header{
     height: 40px;  
     margin: 0;
 }
-header{
+/*------------------------------ PACIENTE ----------------------------------*/
+#headerpac{
     display: flex;
     background-color: rgb(63, 62, 62);
+    
 }
 
-.logo{
-    width: 88%;
-    margin: 1rem 0;
+#headerpac .logo{
+    width: 85%;
+    margin: 0.5rem 0 ;
 }
 
-.iconos{
-    width: 12%;
-    margin: 1rem 0;
+#headerpac .iconos{
+   width: 10%;
+    margin: 1rem 0 0 0;
 
 }
 
-.fa-house-user{
+#headerpac .fa-house-user{
     background-color: rgb(218, 216, 216);
     padding: 0.8rem;
     border-radius: 50%;
-    border: 3px solid rgb(2, 190, 190);
+    border: 3px solid var(--viriGreen-color);
 }
 
-.fa-power-off{
+#headerpac .fa-power-off{
     background-color: rgb(218, 216, 216);
     padding: 0.8rem;
     border-radius: 50%;
-    border: 3px solid rgb(2, 190, 190);
+    border: 3px solid var(--viriGreen-color);
 }
 
-.franjaNaranja{
-    background-image: url(/img/12.\ franja.svg);
+.franjaNaranja2{
+    background-image: url("../img/12.\ franja.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height:70px;
-    border-bottom: 5px solid rgb(2, 190, 190);
+    border-bottom: 5px solid var(--viriGreen-color);
 }
 
-/* :::::::::::::::::::::::::::::::::::::: PRIMERA SECCION :::::::::::::::::::::::::::::::::::::::::::::::: */
-.encabezado{
+.enc{
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    margin-left: 10rem;
+    
+}
+.botonpa{
+    width: 50%;
+    margin: 3rem 7rem;
 }
 
-.encabezado button{
-    height: 30%;
+.enc button{
+    background-color: var(--safOranBlOr-color);
+    border-radius: 5px;
+    border: none; 
     padding: 0.5rem 1rem;
 }
-.encabezado h1{
-    padding: 1rem 15rem;
-    font-weight: 500;
-    color: rgb(22, 22, 80);
+
+.enc button a{
+    text-decoration: none;
+    color: white;
 }
-
-
-.fa-iconos{
-    background-color: rgb(22, 22, 80);
+.pacient h1{
+    text-align: center;
+    font-weight: 500;
+    color: var(--spaceCadet-color);
+    text-decoration-color: var(--viriGreen-color);
+    
+}
+ .fa-iconos{
+    background-color: var(--spaceCadet-color);
     color: white;
     padding: 0.5rem 1rem;
     margin: 0 0.3rem;
-    border: 3px solid #2bb6c0;
+    border: 3px solid var(--viriGreen-color);
     border-radius: 10px;
 }
+.enc .rellenar{
+    width: 50%;
+    margin: 3rem 5rem;
+}
 
-
-.form-input{
+.rellenar .form-input{
     border: 2px solid aqua;
     padding: 0 10px;
     width: 300px;
@@ -582,12 +597,11 @@ header{
     color: black;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::: TABLA :::::::::::::::::::::::::::::::::::::::: */
-table.colapsado {
+table.tablaxd {
     border-collapse: collapse;
     border-color: #2CA3AB;
     border-style: solid;
-    margin: 0 5rem;
+    margin: 3rem 5rem;
 }
 
 table{
@@ -605,7 +619,7 @@ th{
     padding: 1rem 2rem;
     background-color: rgb(22, 22, 80);
     color: white;
-    border: 5px solid #2CA3AB;
+    
     font-weight: 500;
 }
 
@@ -636,114 +650,32 @@ table button{
     border-style: none;
 }
 
-.encabezado button{
-    background-color: rgb(214, 102, 27);
-    border-radius: 5px;
-    border: none;
-    
-}
 
-.encabezado button a{
-    text-decoration: none;
-    color: white;
-}
 
 .fa-user-plus{
     margin-left: 0.5rem;
 }
-
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
-.pie-pagina .grupo-2{
-    background-color: #000000e1;
-    padding: 15px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-    font-family: Raleway;
-    
-}
-
-.pie-pagina{
-    margin-top: 3rem;
-}
-header{
-    display: flex;
-    background-color: rgb(63, 62, 62);
-}
-
-.logo{
-    width: 88%;
-    margin: 1rem 0;
-}
-
-.iconos{
-    width: 12%;
-    margin: 1rem 0;
-
-}
-
-.fa-house-user{
-    background-color: rgb(218, 216, 216);
-    padding: 0.8rem;
-    border-radius: 50%;
-    border: 3px solid rgb(2, 190, 190);
-}
-
-.fa-power-off{
-    background-color: rgb(218, 216, 216);
-    padding: 0.8rem;
-    border-radius: 50%;
-    border: 3px solid rgb(2, 190, 190);
-}
-
-.franjaNaranja{
-    background-image: url(/img/12.\ franja.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:70px;
-    border-bottom: 5px solid rgb(2, 190, 190);
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::: ENCABEZADO :::::::::::::::::::::::::::::::::::::::::::::::: */
-.cuadroAfuera button{
-    margin: 1rem 35rem;
-    background-color: rgb(214, 102, 27);
-    height: 30%;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    border: none;
-}
-
-.cuadroAfuera a{
-    text-decoration: none;
-    color: white;
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::: TITULO GENERAL :::::::::::::::::::::::::::::::::::::::::::::::: */
+/*------------------------- PACIENTE NUEVO ------------------------*/
 
 .titulo{
-    background-color: rgb(22, 22, 80);
+    background-color: var(--spaceCadet-color);
     color: white;
-    margin: 0 0.3rem;
-    width: 1345px;
+    margin: 1rem 0.3rem;
+    width: 100%;
     text-align: center;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
-
+:placeholder-shown{
+    font-family: 'Poppins', sans-serif;
+}
+:disabled select{
+    font-family: 'Poppins', sans-serif;
+}
 .titulo h1{
     font-weight: 400;
     padding: 5px 0;
    
 }
-
-/* ::::::::::::::::::::::::::::::::::::::::: RECUADROS  :::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .cuadroAfuera{
     border: 2px solid gray;
@@ -759,16 +691,17 @@ header{
     padding: 30px 12px;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::: CONTENIDO  :::::::::::::::::::::::::::::::::::::::::::::::: */
 .seccion1{
     display: flex;
     flex-wrap: wrap;
 }
-
+.seccion3{
+    display: flex;
+}
 .cuadro1 input{
     width: 200px;
     height: fit-content;
-    border: 2.8px solid #62A1AA;
+    border: 2.8px solid var(--viriGreen-color);
     border-radius: 3px;
     padding: 0.5rem;
 }
@@ -783,13 +716,13 @@ header{
     font-size: 15px;
     width: 200px;
     height: fit-content;
-    border: 2.8px solid #62A1AA;
+    border: 2.8px solid var(--viriGreen-color);
     border-radius: 3px;
 }
 
 .titulo2{
-    border: 2px solid #46737F;
-    background-color: #62A1AA;
+    border: 2px solid #365057;
+    background-color: var(--viriGreen-color);
     display: flex;
     padding: 10px 3rem;
     color: white;
@@ -809,8 +742,8 @@ header{
 
 .titulo3{
     margin: 1rem 0;
-    border: 2px solid #46737F;
-    background-color: #62A1AA;
+    border: 2px solid #365057;
+    background-color: var(--viriGreen-color);
     display: flex;
     padding: 10px 3rem;
     border-radius: 10px;
@@ -824,8 +757,8 @@ header{
 
 .titulo4{
     margin: 1rem 0;
-    border: 2px solid #46737F;
-    background-color: #62A1AA;
+    border: 2px solid #365057;
+    background-color: var(--viriGreen-color);
     display: flex;
     padding: 10px 3rem;
     border-radius: 10px;
@@ -838,8 +771,6 @@ header{
     margin-top: 7px;
 }
 
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::: DATOS DEL PACIENTE :::::::::::::::::::::::::::::::::::::::: */
 .fila1{
     display: flex;
 }
@@ -847,7 +778,7 @@ header{
 .cuadro1-1 input{
     width: 550px;
     height: fit-content;
-    border: 2.8px solid #62A1AA;
+    border: 2.8px solid var(--viriGreen-color);
     border-radius: 3px;
     padding: 0.5rem;
     
@@ -861,7 +792,7 @@ header{
 .cuadro1-2 input{
     width: 550px;
     height: fit-content;
-    border: 2.8px solid #62A1AA;
+    border: 2.8px solid var(--viriGreen-color);
     border-radius: 3px;
     padding: 0.5rem;
     
@@ -910,7 +841,6 @@ select {
     font-weight: 300;   
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::: INFO DEL CONTACTO :::::::::::::::::::::::::::::::::::::::: */
 .select1{
     margin-right: 2.5rem;
     margin-left: 1rem;
@@ -926,7 +856,6 @@ select {
     display: flex;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::: estado de salud :::::::::::::::::::::::::::::::::::::::: */
 .salud{
     display: flex;
 }
@@ -962,23 +891,27 @@ select {
     margin: 1.5rem;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
-.pie-pagina .grupo-2{
-    background-color: #000000e1;
-    padding: 15px 10px;
+.cuadroAfuera button{
+    margin: 1rem 35rem;
+    background-color: var(--safOranBlOr-color);
+    height: 30%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+.cuadroAfuera button a{
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    font-size: 13px; 
+    color: white;
 }
-
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-    font-family: Raleway;
+select{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     
+    color: #4e4c4d;
+    height: fit-content;
 }
 
-.pie-pagina{
-    margin-top: 3rem;
-}
+
 

@@ -1,210 +1,258 @@
 <!DOCTYPE html>
 <html lang="es-Es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forja Empresas</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3377be9db6.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="../../assets/img/forja-favicon.png">
-        <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forja Empresas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3377be9db6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../../assets/img/forja-favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+</head>
+
 <body>
-    <header>
+    <header id="headerpac">
         <div class="logo">
             <img src="../../assets/img/0. logoforja.png">
         </div>
 
         <div class="iconos">
             <a href="../dashboard.html"><i class="fa-solid fa-house-user fa-2x"></i></a>
-            <a href="../login.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
+            <a href="../../views/index1.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
         </div>
+
     </header>
 
-    <section class="franjaNaranja"></section>
+    <section class="franjaNaranja2"></section>
 
     <section class="titulo">
-            <h1>REGISTRO USUARIO NUEVO</h1>
-        </section>
-    
+        <h1>REGISTRO USUARIO NUEVO</h1>
+    </section>
+
     <section class="cuadroAfuera">
-            <section class="dentro">
-                <div class="seccion1">
-                    <div class="cuadro1">
-                        <label for="date"></label>
-                        <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" style="height: 1.5rem" required>
-                    </div>
-
-                    <div class="cuadro2">
-                        <label for="numero de Registro"></label>
-                        <input name="Nombre" id="Nombre" type="text" style="height: 1.5rem" placeholder="No. de Registro" required>
-                    </div>
-                </div>
-            <!-----------------------------------------DATOS DEL PACIENTE---------------------------------------->
-                <div class="titulo2">
-                    <i class="fa-solid fa-user fa-titulos fa-2x"></i><p>DATOS DEL PACIENTE</p>
+        <section class="dentro">
+            <div class="seccion3">
+                <div class="cuadro1">
+                    <label for="date"></label>
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" style="height: 1.5rem"
+                        required>
                 </div>
 
-                <div class="contTitulo2">
-                    <div class="fila1">
-                        <div class="cuadro1-1">
-                            <label for="Nombre"></label>
-                            <input name="Nombre" id="Nombre" type="text" style="height: 1.5rem" placeholder="Escribe tu Nombre" required>
-                        </div>
+                <div class="cuadro2">
+                    <label for="numero de Registro"></label>
+                    <input name="nombre" id="nombre" type="text"  placeholder="No. de Registro"
+                        required>
+                </div>
+            </div>
+            <div class="titulo2">
+                <i class="fa-solid fa-user fa-titulos fa-2x"></i>
+                <p>DATOS DEL PACIENTE</p>
+            </div>
 
-                        <div class="cuadro1-2">
-                        <label for="Nombre"></label>
-                        <input name="Nombre" id="Nombre" type="text"  style="height: 1.5rem" placeholder="Apellidos" required>
-                        </div>
+            <div class="contTitulo2">
+                <div class="fila1">
+                    <div class="cuadro1-1">
+                        <label for="nombre"></label>
+                        <input name="nombre" id="nombre" type="text" style="height: 1.5rem"
+                            placeholder="Escribe tu Nombre" required>
                     </div>
 
-                    <div class="fila2">
-                        <div class="cuadro1-10">
-                            <div class="cuadro1-12">
-                                <label for="identificacion"></label>
-                                <input name="identificacion" id="identificacion" type="text" style="height: 1.5rem" placeholder="Numero de identificacion" required>
-                            </div>
-                        
-                            <div class="cuadro1-select">
-                                <label for="documentoTI"></label>
-                                    <select name="documentoTI" id="documentoTI" required>
-                                        <option disabled selected >Tipo de documento</option>
-                                        <option value="0">CC</option>
-                                        <option value="1">CE</option>
-                                        <option value="2">NIP</option>
-                                        <option value="3">NIT</option>
-                                        <option value="4">TI</option>
-                                    </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fila1">
-                        <div class="cuadro1-1">
-                            <label for="date"></label>
-                            <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30" style="height: 1.5rem" required>
-                        </div>
-                        <div class="cuadro1-2">
-                            <input type="number" placeholder="Edad" style="height: 1.5rem" required>
-                        </div>
+                    <div class="cuadro1-2">
+                        <label for="apellido"></label>
+                        <input name="apellido" id="apellido" type="text" style="height: 1.5rem" placeholder="Apellidos"
+                            required>
                     </div>
                 </div>
-            <!-----------------------------------------IINFORMACION DE CONTACTO---------------------------------------->
-                <div class="titulo3">
-                    <i class="fa-solid fa-location-dot fa-titulos fa-2x"></i><p>INFORMACION DE CONTACTO</p>
-                </div>
 
-                <div class="contTitulo2-3">
-                    <div class="fila1">
-                        <div class="select1">
-                            <label for="departamento"></label>
-                                <select class="form-control" id="departamento" name="departamento" required>
-                                    <option disabled selected>Departamento de Residencia</option>
-                                    <option value = "Amazonas">Amazonas</option>
-                                   
-                                </select>
+                <div class="fila2">
+                    <div class="cuadro1-10">
+                        <div class="cuadro1-12">
+                            <label for="identificacion"></label>
+                            <input name="identificacion" id="identificacion" type="text" style="height: 1.5rem"
+                                placeholder="Numero de identificacion" required>
                         </div>
-                        <div class="select2">
-                            <label for="Municipio" class="control-label"></label>
-                            <select class="form-control" id="Municipio" required>
-                                <option disabled selected>Municipio de Residencia</option>
-                                
+
+                        <div class="cuadro1-select">
+                            <label for="documento"></label>
+                            <select name="documento" id="documento" required>
+                                <option disabled selected>Tipo de documento</option>
+                                <option value="0">CC</option>
+                                <option value="1">CE</option>
+                                <option value="2">NIP</option>
+                                <option value="3">NIT</option>
+                                <option value="4">TI</option>
                             </select>
                         </div>
                     </div>
-                    <div class="fila2">
-                        <div class="cuadro1-1">
-                            <label for="direccion"></label>
-                            <input name="direccion" id="direccion" type="text" style="height: 1.5rem" placeholder="Direccion" required>
-                        </div>
-
-                        <div class="cuadro1-1">
-                            <label for="email"></label>
-                            <input type="email" id="email" name="email" style="height: 1.5rem" placeholder="Correo" pattern="\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}" required>
-                        </div>
+                </div>
+                <div class="fila1">
+                    <div class="cuadro1-1">
+                        <label for="date"></label>
+                        <input type="date" id="date" name="date" min="2000-01-01" max="2022-04-30"
+                            style="height: 1.5rem" required>
                     </div>
-                    <div class="fila3">
-                        <div class="cuadro1-1">
-                            <label for="telefonofijo"></label>
-                            <input name="telefonofijo" id="telefonofijo" style="height: 1.5rem" type="text" placeholder="Telefono fijo" required>
-                        </div>
-                        <div class="cuadro1-1">
-                            <label for="celular"></label>
-                            <input name="celular" id="celular" style="height: 1.5rem" type="text" placeholder="Celular" required>
-                        </div>
+                    <div class="cuadro1-2">
+                        <input type="number" placeholder="Edad" style="height: 1.5rem" required>
                     </div>
                 </div>
-             <!----------------------------------------- ESTADO DE SALUD ---------------------------------------->
-                <div class="titulo4">
-                    <i class="fa-solid fa-heart-pulse fa-titulos fa-2x"></i><p>ESTADO DE SALUD</p>
+            </div>
+            <div class="titulo3">
+                <i class="fa-solid fa-location-dot fa-titulos fa-2x"></i>
+                <p>INFORMACION DE CONTACTO</p>
+            </div>
+
+            <div class="contTitulo2-3">
+                <div class="fila1">
+                    <div class="select1">
+                        <label for="departamento"></label>
+                        <select class="form-control" id="departamento" name="departamento" required>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
+
+                        </select>
+                    </div>
+                    <div class="select2">
+                        <label for="Municipio" class="control-label"></label>
+                        <select class="form-control" id="Municipio" required>
+                            <option disabled selected>Municipio de Residencia</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="fila2">
+                    <div class="cuadro1-1">
+                        <label for="direccion"></label>
+                        <input name="direccion" id="direccion" type="text" style="height: 1.5rem"
+                            placeholder="Direccion" required>
+                    </div>
+
+                    <div class="cuadro1-1">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" style="height: 1.5rem" placeholder="Correo"
+                            pattern="\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}" required>
+                    </div>
+                </div>
+                <div class="fila3">
+                    <div class="cuadro1-1">
+                        <label for="telefonofijo"></label>
+                        <input name="telefonofijo" id="telefonofijo" style="height: 1.5rem" type="text"
+                            placeholder="Telefono fijo" required>
+                    </div>
+                    <div class="cuadro1-1">
+                        <label for="celular"></label>
+                        <input name="celular" id="celular" style="height: 1.5rem" type="text" placeholder="Celular"
+                            required>
+                    </div>
+                </div>
+            </div>
+            <div class="titulo4">
+                <i class="fa-solid fa-heart-pulse fa-titulos fa-2x"></i>
+                <p>ESTADO DE SALUD</p>
+            </div>
+
+            <div class="salud">
+                <div class="selectSalud">
+                    <label for="preexistencias"></label>
+                    <select name="preexistencias" id="preexistencias" required>
+                        <option disabled selected>Preexistencias</option>
+                        <option value="0">Cirugias</option>
+                        <option value="1">Hospitalizaciones</option>
+                        <option value="2">Enfermedades</option>
+                    </select>
                 </div>
 
-                <div class="salud">
-                    <div class="selectSalud">
-                        <label for="preexistencias"></label>
-                                    <select name="preexistencias" id="preexistencias" required>
-                                        <option disabled selected>Preexistencias</option>
-                                        <option value="0">Cirugias</option>
-                                        <option value="1">Hospitalizaciones</option>
-                                        <option value="2">Enfermedades</option>
-                                    </select>
-                    </div>
-
-                    <div class="selectSalud">
-                        <label for="preexistencias"></label>
-                                    <select name="preexistencias" id="preexistencias" required>
-                                        <option disabled selected>Discapacidad</option>
-                                        <option value="0">Discapacidad Fisica</option>
-                                        <option value="1">Discapacidad Auditiva</option>
-                                        <option value="2">Discapacidad Visual</option>
-                                        <option value="2">Sordoceguera</option>
-                                        <option value="2">Discapacidad Intelectual</option>
-                                        <option value="2">Discapacidad Psicosocial (mental)</option>
-                                        <option value="2">Discapacidad Multiple</option>
-                                    </select>
-                    </div>
-
-                    <div class="cuadro1-alergias">
-                        <label for="alergias"></label>
-                        <input name="alergias" id="alergias" type="text" style="height: 1.5rem" placeholder="Alergias" required>
-                    </div>
+                <div class="selectSalud">
+                    <label for="preexistencias"></label>
+                    <select name="preexistencias" id="preexistencias" required>
+                        <option disabled selected>Discapacidad</option>
+                        <option value="0">Discapacidad Fisica</option>
+                        <option value="1">Discapacidad Auditiva</option>
+                        <option value="2">Discapacidad Visual</option>
+                        <option value="2">Sordoceguera</option>
+                        <option value="2">Discapacidad Intelectual</option>
+                        <option value="2">Discapacidad Psicosocial (mental)</option>
+                        <option value="2">Discapacidad Multiple</option>
+                    </select>
                 </div>
 
-                <form>
-                    <article class="texto1">
-                        <legend for="pruebaCovid">¿El paciente se ha realizado la prueba de covid con anterioridad y esta ha salido positiva?</legend>
-                            <div class="btn-si-no">
-                                <label >
-                                    <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">SI
-                                    <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required" checked>NO
-                                </label>
-                            </div>
-                    </article>
-                </form>
+                <div class="cuadro1-alergias">
+                    <label for="alergias"></label>
+                    <input name="alergias" id="alergias" type="text" style="height: 1.5rem" placeholder="Alergias"
+                        required>
+                </div>
+            </div>
 
-                <form>
-                    <article class="texto1">
-                        <label for="pruebaCovid">¿El paciente ha tenido un contacto estrecho con una persona confirmada o sospechosa COVID-19 en los ultimos 14 dias?</label>
-                            <div class="btn-si-no">
-                                <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">SI
-                                <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required" checked>NO
-                            </div>
-                    </article>
-                </form>
+            <form>
+                <article class="texto1">
+                    <legend for="pruebaCovid">¿El paciente se ha realizado la prueba de covid con anterioridad y esta ha
+                        salido positiva?</legend>
+                    <div class="btn-si-no">
+                        <label>
+                            <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">SI
+                            <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required" checked>NO
+                        </label>
+                    </div>
+                </article>
+            </form>
 
-            </section>
+            <form>
+                <article class="texto1">
+                    <label for="pruebaCovid">¿El paciente ha tenido un contacto estrecho con una persona confirmada o
+                        sospechosa COVID-19 en los ultimos 14 dias?</label>
+                    <div class="btn-si-no">
+                        <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required">SI
+                        <input name="pruebaCovid" id="pruebaCovid" type="radio" required="required" checked>NO
+                    </div>
+                </article>
+            </form>
 
-            <button><a href="#">Guardar</button></a> 
+        </section>
+
+        <button><a href="#">Guardar</button></a>
 
     </section>
 
 </body>
 
-<footer class="pie-pagina">
-    <div class="grupo-2">
-        <small>&copy;2021  FORJA EMPRESAS </small>
+<footer class="footer">
+    <div class="footer1">
+        <small>&copy;2021 FORJA EMPRESAS </small>
     </div>
 </footer>
 
