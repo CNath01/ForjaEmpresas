@@ -1128,13 +1128,7 @@ select{
         height:70px;
     
     }
-    #log{
-        width: 100%;
-        
-    } 
-    .btn-login{
-         margin: 1.5rem 30rem 0rem 30rem;
-    } 
+   
 
 }
 
@@ -1191,15 +1185,7 @@ select{
     font-size: 16px;
     
 }
-#log{
-    width: 100%;
-    
-} 
-#logg .btn-login{
-    display: flex;
-     margin: 1.5rem 45rem 0rem 45rem;
-    
-} 
+
 }
 
 /*--------------------- | RESOLUCIÓN MACRO | ---------------------*/
