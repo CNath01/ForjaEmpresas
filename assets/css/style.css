@@ -29,245 +29,337 @@ p{
     text-align: justify;
 }
 /*------------------------------ |HEADER| -----------------------------*/
-header{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.fa-iconHead{
-    background-color: var(--safOranBlOr-color);
-    padding: 6px 6px;
-    border-radius: 50%;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0);
-}
 
-#info{
-    width: 100%;
-    display: flex;
-    font-weight: lighter;
-}
-
-.tel{
-    display: flex;
-    margin: 0 1rem 0 29rem;
-    align-items: center;
     
-}
 
-.tel p{
-    text-align: left;
-    padding-left: 1.5rem;
-    padding-bottom: 0.1rem;
-    font-weight: 300;
-    width: 8rem;
+
+    .telefono{
+        grid-area: item1;
+          
+    }
+    .ubicacion{
+        grid-area: item2;
+        
+    }
+    .grid-item3{
+        display: flex;
+        grid-area: item3;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        
+    }
     
-}
-
-.ubi{
-    display: flex;
-    margin: 2rem 0 2rem 4rem;
-    align-items: center;
-}
-
-.ubi p{
-    text-align: left;
-    padding-left: 1.5rem;
-    padding-bottom: 0.1rem;
-    font-weight: 300;
-    width: 20rem;
-
-}
-
-.bs{
-    margin-top: 2rem;
-
-}
-
-.btn-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    width: 9.5rem;
-    height: 2rem;
-    background-color: var(--CadetC-color);
-    border-style: none;
-    border-radius: 15rem;
-    text-align: center;
-    cursor: pointer;
-    transition-duration: 0.1s;
-}
-
-
-.btn-login a{
-    margin:20px 0;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-}
-
-.btn-login:hover{
-    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61);
-    cursor: pointer;
-}
-
-.logo{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    padding: 0.1rem 0.6rem 1rem 3rem;
-}
-
-.logoForja{
-    padding-left: 10px;
-    padding-right: 1rem;
-}
-
-.lE{
-    width: 60%;
-    height: 50%;
-    padding-left: 100px;
-}
-
-.fa-icon{
-    color: var(--safOranBlOr-color);
-}
-/*----------------------------------- |SECCION 1|--------------------------------------*/
-.seccion1{
-    background-image: url("../img/2.\ medico.png"); 
-    background-size:cover;
-    height:320px;
-    padding: 9rem 1rem 1rem 10rem;
-    flex-direction: column;
-}
-
-.seccion1 h2{
-    font-size:40px;
-    font-weight: 300;
-    font-weight: 500;
-    color: rgb(216, 118, 53);
-    letter-spacing: -2px;
-    padding-left: 1rem;
-}
-
-.seccion1 h1{
-    font-size:50px;
-    font-weight: 400;
-    padding: 0 10rem;
-    margin-top: 2px;
-}
-.seccion1 .btn-login{
-    display: flex;
-    align-items: center;
+    .grid-item5{
+        grid-area: item5;
+        
+    }
+    .grid-item6{
+        grid-area: item6;
+        
+    }
+    .botonSesion{
+            display: none;  
+        }
+        
+        
+    .grid-header{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item1 item2"
+        "item5 item5"  
+        "item3 item3";  
+    }
     
-    margin-top: 0.2rem;
-    margin-left: 12rem;
     
-    padding-left: 12px;
-}
-
-#franjaN{
-    width: 100%;
-    height: 100%;  
-    margin: 0;
-}
-
-/*----------------------------------- |SECCION 2|--------------------------------------*/
-
-.seccion2{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url("../img/4.\ covid.jpeg");
-    background-size:cover;
-    height:320px;
-    display: flex;
-    margin: 0;
-    padding: 2rem 2rem;
+    .fa-iconHead{
+        background-color: rgb(220, 118, 51 );
+        padding: 6px 6px;
+        border-radius: 50%;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0);
+    }
     
-}
-.seccion2 h1{
-    font-size: 25px;
-    font-weight: 400;
-    color: var(--CadetC-color);
-}
-
-.fa-flecha{
-    background-color: var(--rufous-color);
-    border-radius: 50%;
-    padding: 5px 8px;
-    color: white;
-    margin: 2px 1rem;
-}
-
-
-.fa-qs{
-    background-color: var(--rufous-color);
-    border-radius: 50%;
-    padding: 18px 12px;
-    color: white;
-    margin: 2px 1rem;
-}
-
-
-.tabla1{
-    width: 60%;
-}
-
-.tabla1 ul li, .tabla2 p{
-    margin: 1rem 5rem;
-    font-size: 17px;
-    font-weight: 200;
-    list-style: none;
-    vertical-align: center;
-
-}
-
-.fa-lg{
-    margin: 0.5rem 1rem;
-    color: rgb(177, 0, 0);
- }
-
-.tabla2{
-    width: 50%;
-}
-
-.tabla2 img{
-    width: 20%;
-    display:block;
-    margin:auto;
-}
-
-.tabla2 a{
-    margin-left: 10rem;
-}
-
-.qst{
-    background-color: rgb(51, 51, 51);
-    margin-bottom: 1rem;
-}
-
-.qst p{
-    background-color: rgb(27, 27, 36);
-    margin-bottom: 0.8rem ;
-    padding: 0.5rem;
     
-}
+    
+    .telefono{
+        display: flex;
+        margin: 1rem 2rem 0 2rem;
+        align-items: center;
+        
+    }
+    
+    .telefono p{
+        text-align: left;
+        padding-left: 1rem;
+        padding-bottom: 0.1rem;
+        font-weight: 300;
+        width: 8rem;
+        font-size: 12px;
+        
+    }
+    
+    .ubicacion{
+        display: flex;
+        margin: 1rem 1rem 0 1rem;
+        align-items: center;
+    }
+    
+    .ubicacion p{
+        text-align: left;
+        padding-left: 1.5rem;
+        padding-bottom: 0.1rem;
+        font-weight: 300;
+        width: 10rem;
+        font-size: 12px;
+    }
+    
+    
+    
+    .btn-login{
+        
+        display: none;
+    }
+    .btn-login i{
+        padding: 1px 5px;
+    }
+    
+    .btn-login a{
+        margin:20px 0;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .btn-login:hover{
+        box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+    }
+    
+    .icono{
+        display: flex;
+        flex-direction: row;
+        padding: 0.1rem 0.6rem 1rem 3rem;
+    }
+    
+    .logoForja{
+        padding-left: 10px;
+        padding-right: 1rem;
+        max-height: 40vw;
+        height: 100%;
+    }
+    
+    .lineaElectro{
+        width: 80%;
+        padding-left: 100px;
+    }
+    
+    
+    
+    
+    .fa-icon{
+        color: rgb(220, 118, 51 );
+        font-size: 50px;
+    }
+    
+    .seccion{
+        background-image: url("../img/2.\ medico.png");
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        height:180px;
+        padding: 1rem 1rem 1rem 1rem;
+        
+    }
+    
+    .seccion1 h2{
+        font-size:3.7vw;
+        font-weight: 300;
+        color: rgb(202, 110, 48);
+        letter-spacing: -2px;
+        padding-left: 3rem;
+        width: 10rem;
+        text-align: center;
+    
+    }
+    
+    .seccion1 h1{
+        font-size:3vw;
+        font-weight: 400;
+        padding: 0 6.5rem;
+        margin-top: 1vw;
+    }
+    
+    .btn-login2{
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 2rem;
+        background-color: rgb(11, 87, 149);
+        margin-top: 2rem;
+        margin-left: 4.6rem;
+        padding-top: -10px;
+        padding-left: 12px;
+        border-style: none;
+        border-radius: 15rem;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+    .btn-login2 i{
+        padding: 1px 8px;
+        
+    }
+    
+    .btn-login2 a{
+        margin:20px 0;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .btn-login2:hover{
+        box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+    }
+    
+    .franjaNaranja{
+        background-image: url("../img/3.\ franjaninios.svg");
+        background-color: #2CA3AB;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:40px;
+    
+    }
+    .oms{
+        animation: 1s zoom infinite;
+    }
+    @keyframes zoom {
+        20%{
+            transform: scale(0.7);
+            rotate: (-6deg);
+        }
+        
+        
+    
+    }
+    /*----------------------| BANNER |------------------------*/
+    
+        .covid{
+        display: flex;
+        padding: 2rem 2rem;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)),url("../img/4.\ covid.jpeg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+    
+    .fa-fondo{
+        background-color: rgb(177, 0, 0);
+        border-radius: 50%;
+        padding: 5px 8px;
+        color: white;
+        margin: 2px 1rem;
+    }
+    
+    
+    .fa-fondo1{
+        background-color: rgb(177, 0, 0);
+        border-radius: 80%;
+        padding: 18px 12px;
+        color: white;
+        margin: 2px 1rem;
+    }
+    
+    
+    
+    
+    .tabla1 h1{
+        font-size: 20px;
+        font-weight: 400;
+        color: rgb(11, 87, 149);
+        width: 25rem;
+    }
+    
+    .tabla1 ul li{
+        margin: 1rem 5rem;
+        font-size: 15px;
+        font-weight: 200;
+        list-style: none;
+        vertical-align: center;
+    
+    }
+    
+            .fa-checkMargin{
+                margin: 0.5rem 1rem;
+                color: rgb(177, 0, 0);
+                
+            }
+    
+    
+    
+    .tabla2 h1{
+        font-size: 20px;
+        font-weight: 400;
+        color: rgb(11, 87, 149);
+    }
+    .tabla2 p{
+        font-size: 15px;
+    }
+    .tabla2 img{
+        width: 30%;
+        display:block;
+        margin:auto;
+    }
+    
+    .tabla2 a{
+        margin-left: 6.5rem;
+    }
+    
+        .tabla2 a:visited{
+            color: rgb(11, 87, 149);
+        }
+    
+        .tabla2 a:link{
+            color: rgb(11, 87, 149);
+        }
+    
+    .preguntas{
+        background-color: rgb(51, 51, 51);
+        margin-bottom: 1rem;
+    }
+    
+    .preguntas p{
+        background-color: rgb(10, 10, 36);
+        margin-bottom: 0.6rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 0.5rem;
+        font-size: 12px;
+        
+    }
+    
+    .preguntas a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .preguntas a:visited{
+        color: white;;
+    }
+    
+    .preguntas a:link{
+        color: white;
+    }
+    
+   
+    
 
-.qst a{
-    text-decoration: none;
-    color: white;
-}
-
-.footer .footer1{
-    background-color: black;
-    padding: 0px 10px 20px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    vertical-align: top;
-    font-size: 13px;
-}
 /*--------------------------- |LOGIN|-------------------------------*/
 #loggg{
     background-image: url("../img/10.png");
@@ -283,16 +375,21 @@ header{
     border-style: solid;
     padding: auto 1rem auto auto;
     border-radius: 10px;
-    margin: 1.5rem 50rem 1rem 50rem; 
+    margin:  1.5rem 2rem 0rem 15rem;
+    display: block;
 }
+
 #log{
     background-color: white;
     align-items: center;
-    margin: 1.5rem 28rem;
-    width: 510px;
+    max-width: 480px;
+    width: 80%;
     height: 500px;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0);
+    border-radius: 30px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login .logo{
@@ -337,7 +434,7 @@ header{
 .form1 .form-input{
     border: 2px solid rgb(173, 230, 206);
     background-color: rgba(173, 230, 211, 0.459);
-    width: 20rem;
+    width: 70%;
     border-radius: 15px;
     padding: 0.5rem;
     outline: none;
@@ -347,7 +444,9 @@ header{
     margin-top: 5px;
     font-size: 13px;
 }
-
+.logo p{
+    text-align: center;
+}
 .btn-naranja{
     border-color: var(--spaceCadet-color);
     border-style: solid;
@@ -367,6 +466,7 @@ header{
     text-decoration: none;
     color:#ffffff;
 }
+
 /*-------------------- |DASHBOARD| ---------------------*/
 .main{
     display: flex;
@@ -912,6 +1012,216 @@ select{
     color: #4e4c4d;
     height: fit-content;
 }
+/*--------------------- | RESOLUCIÓN TABLETA | ---------------------*/
+@media screen and (min-width: 768px) {
+    .botonSesion{
+        display: flex;
+        grid-area: item4;
+        
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    .grid-header{
+        grid-template-areas: 
+        "item1 item2"  
+        "item5 item5"  
+        "item3 item4" ;
+    }
+    
+    .btn-login{
+    display: flex;
+    align-items: center;
+    width: 9.5rem;
+    height: 2rem;
+    background-color: rgb(11, 87, 149);
+    margin:  2rem;
+    margin-right: 3rem;
+    padding-top: 1px;
+    padding-left: 12px;
+    border-style: none;
+    border-radius: 15rem;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    }
+    .telefono p{
+        
+        font-size: 14px;
+        
+    }
+    .ubicacion p{  
+        font-size: 14px;
+        width: 20rem;
+    }
+    .seccion{
+        
+        height: 220px;;
+        padding: 3rem ;
+        
+    }
+    .seccion1{
+        display: flex;
+    }
+    .seccion1 h2{
+        
+        
+        letter-spacing: -2px;
+        padding-left: 2rem;
+        width: 20rem;
+        text-align: center;
+    
+    }
+    
+    .seccion1 h1{
+        
+        font-weight: 400;
+        padding: 0 9rem;
+        margin-top: 1vw;
+    }
+    
+   
+    .covid{
+        
+        
+        padding: 2rem 7rem;
+    }
+    .tabla1 h1{
+        font-size: 25px;
+    }
+    
+    .tabla1 ul li{
+        font-size: 18px;
+    }
+    .tabla2 h1{
+        font-size: 25px;
+    }
+    .tabla2 p{
+        font-size: 18px;
+    }
+    .btn-login2{
+        
+        width: 150px;
+        
+        margin-top: 2rem;
+        margin-left: 8rem;
+        
+    }
+    .btn-login2 i{
+        padding: 1px 8px;
+        
+    }
+    
+    .btn-login2 a{
+        margin:20px 0;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+    }
+    .preguntas p{
+        font-size: 14px;
+        
+    }
+    .franjaNaranja{
+        height:70px;
+    
+    }
+    #log{
+        width: 100%;
+        
+    } 
+    .btn-login{
+         margin: 1.5rem 30rem 0rem 30rem;
+    } 
 
+}
+
+/*--------------------- | RESOLUCIÓN MEDIA | ---------------------*/
+@media screen and (min-width: 1024px) {
+   
+        .telefono p{  
+        font-size: 16px;
+    }
+    .ubicacion p{  
+        font-size: 16px;
+        width: 20rem;
+    }
+    .seccion{
+       
+        height:320px;
+        padding: 6rem 1rem 1rem 5rem;
+        
+    }
+    .seccion1 h1{
+        font-size:50px;
+        font-weight: 400;
+        padding: 0 12rem;
+        margin-top: 2px;
+    }
+       
+        .seccion1 h2{
+            font-size:40px;
+            width: 40rem;
+        } 
+        .btn-login2{
+        
+            width: 150px;
+            
+            margin-top: 2rem;
+            margin-left: 10rem;
+            
+        }
+        
+        
+    
+    .covid{
+        
+        flex-direction: row;
+        
+    }
+    .tabla1{
+        width: 60%;
+    }
+    .tabla2{
+    width: 50%;
+}
+.preguntas p{
+    font-size: 16px;
+    
+}
+#log{
+    width: 100%;
+    
+} 
+#logg .btn-login{
+    display: flex;
+     margin: 1.5rem 45rem 0rem 45rem;
+    
+} 
+}
+
+/*--------------------- | RESOLUCIÓN MACRO | ---------------------*/
+@media screen and (min-width: 1200px) {
+    .grid-header{
+        grid-template-columns: 1.5fr 1fr 1fr ;
+        grid-template-areas: 
+        " item6 item1 item2 item4"  
+        " item3 item5 item5 item5"  
+        ;
+    }
+    
+}
+.footer .footer1{
+background-color: black;
+padding: 0px 10px 20px 10px;
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
+color: rgb(255, 255, 255);
+text-align: center;
+vertical-align: top;
+font-size: 13px;
+}
 
 
