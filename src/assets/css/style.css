@@ -172,51 +172,70 @@ p{
         
         background-size: cover;
         height:180px;
-        padding: 1rem 1rem 1rem 1rem;
-        
+        display: grid;
+        grid-template-areas: 
+        "sc1 sc4"
+        "sc2 sc4"
+        "sc3 sc4";   
     }
     
     .seccion1 h2{
-        font-size:3.7vw;
-        font-weight: 300;
-        color: rgb(202, 110, 48);
         letter-spacing: -2px;
-        padding-left: 3rem;
         width: 10rem;
         text-align: center;
-    
     }
-    
-    .seccion1 h1{
-        font-size:3vw;
+    .sc1{
+        grid-area: sc1;
+
+
+    }
+    .sc2{
+        grid-area: sc2;
+
+    }
+    .sc3{
+        grid-area: sc3;
+
+    }
+    .sc4{
+        grid-area: sc4;
+
+    }
+    .sc1, .sc2, .sc3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion h1{
+        font-size:4vw;
         font-weight: 400;
-        padding: 0 6.5rem;
-        margin-top: 1vw;
+        margin-top: -20px;
+    }
+    .seccion h2{
+        color: var(--safOranBlOr-color);
+        font-weight: 300;
+        font-size:3vw;
+        margin-bottom: -20px;
     }
     
     .btn-login2{
         display: flex;
         align-items: center;
+        justify-content: center;
         width: 120px;
         height: 2rem;
         background-color: rgb(11, 87, 149);
-        margin-top: 2rem;
-        margin-left: 4.6rem;
-        padding-top: -10px;
-        padding-left: 12px;
+        margin-top: -100px;
         border-style: none;
         border-radius: 15rem;
         text-align: center;
         cursor: pointer;
         transition-duration: 0.1s;
-    }
-    .btn-login2 i{
-        padding: 1px 8px;
-        
+
     }
     
     .btn-login2 a{
-        margin:20px 0;
+
         text-decoration: none;
         color: #ffffff;
         text-align: center;
@@ -366,30 +385,34 @@ p{
     background-size: cover;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
 }
+
 #logg .btn-login{
     
     background-color: var(--spaceCadet-color);
     border-color: #2CA3AB;
     border-style: solid;
-    padding: auto 1rem auto auto;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
-    margin:  1.5rem 2rem 0rem 15rem;
     display: block;
+    margin: auto;
 }
 
 #log{
     background-color: white;
     align-items: center;
     max-width: 480px;
-    width: 80%;
-    height: 500px;
+    width: auto;
+    height: auto;
     border-radius: 30px;
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 1rem;
+    grid-area: l2;
 }
 
 .login .logo{
@@ -399,6 +422,7 @@ p{
     padding: 3rem;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+
 }
 
 
@@ -434,7 +458,7 @@ p{
 .form1 .form-input{
     border: 2px solid rgb(173, 230, 206);
     background-color: rgba(173, 230, 211, 0.459);
-    width: 70%;
+    width: 15rem;
     border-radius: 15px;
     padding: 0.5rem;
     outline: none;
@@ -1101,18 +1125,8 @@ select{
         font-size: 18px;
     }
     .btn-login2{
-        
         width: 150px;
-        
-        margin-top: 2rem;
-        margin-left: 8rem;
-        
     }
-    .btn-login2 i{
-        padding: 1px 8px;
-        
-    }
-    
     .btn-login2 a{
         margin:20px 0;
         text-decoration: none;
@@ -1145,7 +1159,7 @@ select{
     .seccion{
        
         height:320px;
-        padding: 6rem 1rem 1rem 5rem;
+
         
     }
     .seccion1 h1{
@@ -1162,9 +1176,7 @@ select{
         .btn-login2{
         
             width: 150px;
-            
-            margin-top: 2rem;
-            margin-left: 10rem;
+
             
         }
         
