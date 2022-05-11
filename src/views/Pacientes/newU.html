@@ -36,7 +36,8 @@
     </section>
 
     <section class="cuadroAfuera">
-        <section class="dentro">
+
+            <form action="../Pacientes/pacientes.html" class="dentro" id="form" name="form" >
             <div class="seccion3">
                 <div class="cuadro1">
                     <label for="date"></label>
@@ -46,7 +47,7 @@
 
                 <div class="cuadro2">
                     <label for="numero de Registro"></label>
-                    <input name="nombre" id="nombre" type="text"  placeholder="No. de Registro"
+                    <input name="nombre" id="nombre" type="number"  placeholder="No. de Registro"
                         required>
                 </div>
             </div>
@@ -242,11 +243,11 @@
                 </article>
             </form>
 
+            <button type="submit" form="form" class="btn-naranja">Guardar</button>
         </section>
+    
+    </form>
 
-        <button><a href="#">Guardar</button></a>
-
-    </section>
 
 </body>
 

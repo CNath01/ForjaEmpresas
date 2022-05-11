@@ -10,7 +10,7 @@
         alert("Porfavor ingrese, nombre y usuario correctos");
     }
 }*/
-function go(){
+function ir(){
 
     let user = document.getElementById("name").value;
     let pass = document.getElementById("password").value;
@@ -20,7 +20,7 @@ function go(){
         document.form.submit(); 
     }
     else{
-       cajaMensaje.innerHTML = 'Porfavor ingrese, nombre y usuario correctos';
+       cajaMensaje.innerHTML = 'Porfavor ingrese, usuario y contraseña correcta';
     }
 }
 /*
