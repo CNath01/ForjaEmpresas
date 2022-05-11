@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ForjaEmpresas </title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="icon" type="image/png" href="img/image.png" width="130px" height="130px">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!--Letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <header id="headerpac">
+        <div class="logo">
+            <img src="../../assets/img/0. logoforja.png">
+        </div>
+
+        <div class="iconos">
+            <a href="../dashboard.html"><i class="fa-solid fa-house-user fa-2x"></i></a>
+            <a href="../../index.html"><i class="fa-solid fa-power-off fa-2x"></i></a>
+        </div>
+
+    </header>
+
+    <section class="franjaNaranja2"></section>
+    
+        <section class="linea1">
+            <p>Estado: Activo</p>
+            <div class="botonpa">
+                <button><a href="newU.html">Guardar cambios<i class="fa-solid fa-user-plus"></i></button></a>
+                
+            </div>
+
+            <div class="button">
+                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</a></button>
+                <button class="save"><a href="/dashboard.html">Cerrar</button></a>
+            </div>
+        </section>
+
+        <div class="title">
+            <h1>Informacion del Paciente</h1>
+        </div>
+
+        <div class="container">
+            <div class="area1">
+                <div class="fechaDeRegistro">
+                    <input type="date" id="date" name="date" min="2000-01-01" max="2022-06-30" required>
+
+                    <input name="Registro" id="registro" type="text" placeholder="No. de Registro" required>
+                </div>
+                <div class="titulo1">
+                    <i class="fa-solid fa-syringe fa-icon"></i>
+                    <p>DATOS PERSONALES</p>
+                </div>
+                <div class="inputs">
+                    <div class="renglon1">
+                        <input name="Nombre" id="nombre" type="text" placeholder="Nombres" required>
+
+                        <input name="Apellidos" id="apellidos" type="text" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion" required>
+
+                        <input type="date" id="dateNac" name="date" min="2000-01-01" max="2022-06-30" required>
+                    </div>
+
+                    <div class="renglon3">
+                        <input type="number" placeholder="Edad" id="edad" required>
+
+                        <select name="eps" id="eps" required>
+                            <option disabled selected>EPS</option>
+                            <option value="0">Salud Colmena</option>
+                            <option value="1">Salud Total</option>
+                            <option value="2">Cafesalud</option>
+                            <option value="3">Sanitas</option>
+                            <option value="4">Compensar</option>
+                            <option value="5">Saludcoop</option>
+                            <option value="6">Coomeva</option>
+                            <option value="7">Famisanar</option>
+                            <option value="8">Cruz Blanca</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="area2">
+                <div class="titulo2">
+                    <i class="fa-solid fa-syringe fa-icon"></i>
+                    <p>INFORMACION DE VACUNACION</p>
+                </div>
+                <div class="inputs2">
+                    <div class="renglon1">
+                        <select name="sedes" id="sedes" required>
+                            <option disabled selected>Sede</option>
+                            <option value="0">Circunvalar</option>
+                            <option value="1">Corferias</option>
+                            <option value="2">Suba</option>
+                            <option value="3">Bosa</option>
+                            <option value="4">Centro</option>
+                        </select>
+
+                        <select name="sedes" id="quienLoVacuno" required>
+                            <option disabled selected>¿Quien lo vacunó?</option>
+                            <option value="0">Maria Fernandez</option>
+                            <option value="1">Laura Osorio</option>
+                            <option value="2">Javier Merlano</option>
+                        </select>
+                    </div>
+
+                    <div class="renglon2">
+                        <input name="idProfesional" id="idProfesional" type="text" placeholder="ID del Profesional"
+                            required>
+
+                        <select name="dosis" id="dosis" required>
+                            <option disabled selected>Dosis</option>
+                            <option value="0">Primera vez</option>
+                            <option value="1">Segunda vez</option>
+                            <option value="2">Tercera vez</option>
+                            <option value="3">Refuerzo</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="input3">
+                    <select name="biologico" id="biologico" required>
+                        <option disabled selected>Biologico</option>
+                        <option value="0">Vacuna Pfizer</option>
+                        <option value="1">Vacuna SinoVac</option>
+                        <option value="2">Vacuna Johnson & Johnson</option>
+                        <option value="3">Vacuna Moderna</option>
+                        <option value="4">Vacuna Oxford, AstraZeneca</option>
+                    </select>
+
+                    <input name="fechaDosis" id="biologico" type="text" placeholder="Fecha 1ra Dosis" required>
+
+                    <input name="fecha2daDosis" id="biologico" type="text" placeholder="Fecha 2da Dosis" required>
+                </div>
+
+                <div class="observaciones">
+                    <textarea name="observacion" id="observacion" cols="40" rows="7"
+                        placeholder="Observaciones adicionales"></textarea>
+                </div>
+            </div>
+        </div>
+
+    
+        <script src="js/registro.js"></script>
+</body>
+
+<footer class="pie-pagina">
+    <div class="grupo-2">
+        <small>&copy;2021 FORJA EMPRESAS </small>
+    </div>
+</footer>
+
+</html>

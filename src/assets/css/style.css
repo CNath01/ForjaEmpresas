@@ -385,7 +385,7 @@ p{
     background-size: cover;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
@@ -1227,8 +1227,461 @@ text-align: center;
 vertical-align: top;
 font-size: 13px;
 }
+/* :::::::::::::::::::::::::::::::::: ¿Seguro? :::::::::::::::::::::::::::::::::::::::: */
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.btn-1{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #da6a20;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-2{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #212179;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.btn-2 a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* ::::::::::::::::::; modal :::::::::::::::::::::::: */ 
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4a4a4a7c;
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modalContainer{
+    margin: auto;
+    background-color: white;
+    width: 30vw;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modalImg{
+    margin: auto;
+    width: 20vw;
+    display: block;
+}
 
 
+.modal:target .modalContainer{
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.modalPicture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+  
+.modalP{
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 1.5
+}
+
+.modalClose{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: 0.4em;
+}
+
+.tab{
+    padding-left: 7rem;
+}
+
+.tab2{
+    margin-left: 3rem;
+}
+.tab3{
+    padding-left: 0.7rem;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+    .modalImg{
+        width: 30vw;
+    }
+
+    .modalP{
+        font-size: 5vw;
+    }
+
+}
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (grid) :::::::::::::::::::::::::::::::::::::::::::::::: */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px 250px 250px;
+    gap: 15px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "area1 area1 area1"
+        "area1 area1 area1"
+        "area2 area2 area2"
+        "area2 area2 area2";
+    margin-bottom: 3rem;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 56.5px 160px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+        "titulo1 titulo1 titulo1"
+        "inputs inputs inputs";
+    grid-area: area1;
+}
+
+.fechaDeRegistro {
+    grid-area: fechaDeRegistro;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.inputs {
+    grid-area: inputs;
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 100px 100px 130px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo2 titulo2 titulo2"
+        "inputs2 inputs2 inputs2"
+        "input3 input3 input3"
+        "observaciones observaciones observaciones";
+    grid-area: area2;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.inputs2 {
+    grid-area: inputs2;
+}
+
+.input3 {
+    grid-area: input3;
+}
+
+.observaciones {
+    grid-area: observaciones;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 1) ::::::::::::::::::::::::::::::::::::::::::: */
+.area1 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 2px solid #62A1AA;
+    width: 42vw;
+}
+
+select {
+    border-radius: 5px;
+    width: 43vw;
+    padding: 6.5px 5px;
+    border: 2px solid #62A1AA;
+}
+
+.fechaDeRegistro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fechaDeRegistro input {
+    height: 20px;
+}
+
+.renglon1,
+.renglon2,
+.renglon3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 2) ::::::::::::::::::::::::::::::::::::::::::: */
+.area2 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+.area2 #biologico {
+    width: 20vw;
+}
+
+.titulo1,
+.titulo2 {
+    color: white;
+    width: 94vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    background-color: #62A1AA;
+    border: 2px solid #46737F;
+    border-radius: 5px;
+}
+
+.titulo1 i,
+.titulo2 i {
+    flex-grow: 2;
+    padding-left: 5rem;
+    font-size: 30px;
+}
+
+.titulo1 p,
+.titulo2 p {
+    flex-grow: 2;
+    font-size: 20px;
+}
+
+.observaciones {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px 15px;
+    border: 4px dashed #62A1AA;
+    width: 42vw;
+    border-radius: 20px;
+}
+
+.input3 {
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input3 #biologico {
+    width: 28vw;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2 {
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+    font-family: Raleway;
+
+}
+
+.pie-pagina {
+    margin-top: 3rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .renglon1, .renglon2, .renglon3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px 350px 350px;
+        gap: 15px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "area1 area1 area1"
+            "area1 area1 area1"
+            "area2 area2 area2"
+            "area2 area2 area2";
+        margin-bottom: 3rem;
+    }
+    .area1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px 110px 260px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+            "titulo1 titulo1 titulo1"
+            "inputs inputs inputs";
+        grid-area: area1;
+    }
+
+    input {
+        border-radius: 5px;
+        padding: 10px 5px;
+        border: 2px solid #62A1AA;
+        width: 75vw;
+    }
+    
+    select {
+        border-radius: 5px;
+        width: 80vw;
+        padding: 6.5px 5px;
+        border: 2px solid #62A1AA;
+    }
+
+    .titulo1, .titulo2 {
+        color: white;
+        width: 80vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+    .fechaDeRegistro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .area2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px 190px 180px 170px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo2 titulo2 titulo2"
+            "inputs2 inputs2 inputs2"
+            "input3 input3 input3"
+            "observaciones observaciones observaciones";
+        grid-area: area2;
+    }
+    
+    .input3{
+        flex-direction: column;
+    }
+
+    .input3 #biologico {
+        width: 243px;
+    }
+
+
+    textarea {
+        height: 25vh;
+        padding: 10px 15px;
+        border: 4px dashed #62A1AA;
+        width: 42vw;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 90vw;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 92vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}
 
 
 
