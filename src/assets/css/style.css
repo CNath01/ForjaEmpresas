@@ -1746,6 +1746,16 @@ textarea {
         border-radius: 5px;
     }
 }
+.linea1{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.button1{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
