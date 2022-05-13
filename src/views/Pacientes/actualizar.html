@@ -40,14 +40,10 @@
     
         <section class="linea1">
             <p>Estado: Activo</p>
-            <div class="botonpa">
-                <button><a href="newU.html">Guardar cambios<i class="fa-solid fa-user-plus"></i></button></a>
-                
-            </div>
 
             <div class="button">
-                <button class="save"><a href="#" id="guardar" class="btn-alert" >Guardar cambios</a></button>
-                <button class="save"><a href="/dashboard.html">Cerrar</button></a>
+                <button type="submit" form="form" class="btn-naranja">Guardar cambios</button>
+                <button class="btn-naranja"><a href="../dashboard.html">Cerrar</button></a>
             </div>
         </section>
 
@@ -56,6 +52,7 @@
         </div>
 
         <div class="container">
+            <form action="../Pacientes/pacientes.html" class="dentro" id="form" name="form">
             <div class="area1">
                 <div class="fechaDeRegistro">
                     <input type="date" id="date" name="date" min="2000-01-01" max="2022-06-30" required>
@@ -157,7 +154,7 @@
                 </div>
             </div>
         </div>
-
+    </form>
     
         <script src="js/registro.js"></script>
 </body>

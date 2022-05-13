@@ -403,7 +403,7 @@ p{
     background-size: cover;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
 
 }
 
@@ -1335,7 +1335,13 @@ font-size: 13px;
     padding: 2.5em 1.5em;
     border-radius: 1em;
 }
-
+.modalContainer h2{
+    margin: 2rem;
+}
+.modalContainer .qs{
+    margin: 2rem;
+    text-align: center;
+}
 .modalImg{
     margin: auto;
     width: 20vw;
