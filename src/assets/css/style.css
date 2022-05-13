@@ -4,6 +4,10 @@
     
     margin: 0;
     padding: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 :root{
     --rufous-color: #a40101;
@@ -28,12 +32,18 @@ p{
     color: var(--dark-color);
     text-align: justify;
 }
+/*------------------------------ |INDEX |------------------------------*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "banner1"
+    "linea"
+    "banner2"
+    "preguntas"
+    "footer";
+}
 /*------------------------------ |HEADER| -----------------------------*/
-
-
-    
-
-
     .telefono{
         grid-area: item1;
           
@@ -66,13 +76,14 @@ p{
         
     .grid-header{
         display: grid;
-        gap: 5px;
+
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas: 
         "item1 item2"
         "item5 item5"  
         "item3 item3";  
+        grid-area: header;
     }
     
     
@@ -154,7 +165,8 @@ p{
     }
     
     .lineaElectro{
-        width: 80%;
+        margin-top: 10px;
+        width: 90%;
         padding-left: 100px;
     }
     
@@ -171,12 +183,13 @@ p{
         background-repeat: no-repeat;
         
         background-size: cover;
-        height:180px;
+        height:200px;
         display: grid;
         grid-template-areas: 
         "sc1 sc4"
         "sc2 sc4"
         "sc3 sc4";   
+        grid-area: banner1;
     }
     
     .seccion1 h2{
@@ -253,7 +266,7 @@ p{
         background-repeat: no-repeat;
         background-size: cover;
         height:40px;
-    
+        grid-area: linea;
     }
     .oms{
         animation: 1s zoom infinite;
@@ -276,6 +289,7 @@ p{
         background-size:cover;
         background-repeat: no-repeat;
         flex-direction: column;
+        grid-area: banner2;
     }
     
     .fa-fondo{
@@ -351,6 +365,7 @@ p{
     .preguntas{
         background-color: rgb(51, 51, 51);
         margin-bottom: 1rem;
+        grid-area: preguntas;
     }
     
     .preguntas p{
@@ -376,6 +391,9 @@ p{
         color: white;
     }
     
+    .footer{
+        grid-area: footer;
+    }
    
     
 
@@ -1101,7 +1119,7 @@ select{
     }
     .seccion{
         
-        height: 220px;;
+        height: 280px;;
         padding: 3rem ;
         
     }
@@ -1127,8 +1145,6 @@ select{
     
    
     .covid{
-        
-        
         padding: 2rem 7rem;
     }
     .tabla1 h1{
@@ -1159,8 +1175,8 @@ select{
         
     }
     .franjaNaranja{
-        height:70px;
-    
+
+    height: 70px;
     }
    
 
@@ -1178,7 +1194,7 @@ select{
     }
     .seccion{
        
-        height:320px;
+        height:380px;
 
         
     }
@@ -1228,6 +1244,12 @@ select{
         " item6 item1 item2 item4"  
         " item3 item5 item5 item5"  
         ;
+    }
+    .seccion{
+        
+        height: 500px;;
+        padding: 3rem ;
+        
     }
     
 }

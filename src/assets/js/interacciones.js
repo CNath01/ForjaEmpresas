@@ -1,15 +1,4 @@
-/*function login(){
-    let user = document.getElementById("name").value;
-    let pass = document.getElementById("password").value;
 
-    if(document.form.pass.value=='Admin' && document.form.user.value=='1234'){
-        document.form.submit();
-        window.location = "prueba.html";
-    }
-    else{
-        alert("Porfavor ingrese, nombre y usuario correctos");
-    }
-}*/
 function ir(){
 
     let user = document.getElementById("name").value;
@@ -23,17 +12,6 @@ function ir(){
        cajaMensaje.innerHTML = 'Porfavor ingrese, usuario y contraseña correcta';
     }
 }
-/*
-function go(){
-
-    if (document.form.password.value=='Admin' && document.form.login.value=='Kuepa2022'){ 
-            document.form.submit(); 
-        } 
-        else{ 
-             alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-            
-        } 
-    } */
 
 let caso1 = "52368795";
 let caso2 = "1001235478";
