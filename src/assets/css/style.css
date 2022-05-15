@@ -32,7 +32,7 @@ p{
     color: var(--dark-color);
     text-align: justify;
 }
-/*------------------------------ |INDEX |------------------------------*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° | INDEX | *°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -43,7 +43,7 @@ p{
     "preguntas"
     "footer";
 }
-/*------------------------------ |HEADER| -----------------------------*/
+/*------------------------------- | HEADER | ------------------------------*/
     .telefono{
         grid-area: item1;
           
@@ -169,15 +169,11 @@ p{
         width: 90%;
         padding-left: 100px;
     }
-    
-    
-    
-    
     .fa-icon{
         color: rgb(220, 118, 51 );
         font-size: 50px;
     }
-    
+/*------------------------------- | BANNER1 | ------------------------------*/
     .seccion{
         background-image: url("../img/2.\ medico.png");
         background-repeat: no-repeat;
@@ -191,10 +187,9 @@ p{
         "sc3 sc4";   
         grid-area: banner1;
     }
-    
-    .seccion1 h2{
+    .sc1 h2{
         letter-spacing: -2px;
-        width: 10rem;
+
         text-align: center;
     }
     .sc1{
@@ -229,6 +224,7 @@ p{
         font-weight: 300;
         font-size:3vw;
         margin-bottom: -20px;
+        letter-spacing: -2px;
     }
     
     .btn-login2{
@@ -268,21 +264,9 @@ p{
         height:40px;
         grid-area: linea;
     }
-    .oms{
-        animation: 1s zoom infinite;
-    }
-    @keyframes zoom {
-        20%{
-            transform: scale(0.7);
-            rotate: (-6deg);
-        }
-        
-        
+    /*------------------------------- | BANNER2 | ------------------------------*/
     
-    }
-    /*----------------------| BANNER |------------------------*/
-    
-        .covid{
+    .infoba{
         display: flex;
         padding: 2rem 2rem;
         background-image: linear-gradient(rgba(255, 255, 255, 0.830), rgba(255, 255, 255, 0.830)),url("../img/4.\ covid.jpeg");
@@ -299,8 +283,6 @@ p{
         color: white;
         margin: 2px 1rem;
     }
-    
-    
     .fa-fondo1{
         background-color: rgb(177, 0, 0);
         border-radius: 80%;
@@ -308,10 +290,6 @@ p{
         color: white;
         margin: 2px 1rem;
     }
-    
-    
-    
-    
     .tabla1 h1{
         font-size: 20px;
         font-weight: 400;
@@ -327,15 +305,11 @@ p{
         vertical-align: center;
     
     }
-    
-            .fa-checkMargin{
-                margin: 0.5rem 1rem;
-                color: rgb(177, 0, 0);
-                
-            }
-    
-    
-    
+    .fa-checkMargin{
+         margin: 0.5rem 1rem;
+        color: rgb(177, 0, 0);
+    }
+
     .tabla2 h1{
         font-size: 20px;
         font-weight: 400;
@@ -354,14 +328,25 @@ p{
         margin-left: 6.5rem;
     }
     
-        .tabla2 a:visited{
-            color: rgb(11, 87, 149);
-        }
+    .tabla2 a:visited{
+        color: rgb(11, 87, 149);
+    }
     
-        .tabla2 a:link{
-            color: rgb(11, 87, 149);
-        }
-    
+    .tabla2 a:link{
+        color: rgb(11, 87, 149);
+    }
+
+    .oms{
+        animation: 1s zoom infinite;
+    }
+     @keyframes zoom {
+        20%{
+            transform: scale(0.7);
+            rotate: (-6deg);
+        }   
+     }
+     
+    /*------------------------------- | PREGUNTAS | ------------------------------*/
     .preguntas{
         background-color: rgb(51, 51, 51);
         margin-bottom: 1rem;
@@ -391,46 +376,74 @@ p{
         color: white;
     }
     
+/*------------------------------- | FOOTER | ------------------------------*/
+    
     .footer{
         grid-area: footer;
     }
-   
-    
+    .footer .footer1{
+        background-color: black;
+        padding: 0px 10px 20px 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        vertical-align: top;
+        font-size: 13px;
+    }
 
-/*--------------------------- |LOGIN|-------------------------------*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° | LOGIN | *°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
 #loggg{
     background-image: url("../img/10.png");
     background-size: cover;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    display: grid;
+    grid-template-areas: 
+    "btnlog"
+    "login";
+    gap: 2rem;
 
 }
+#logg{
+    grid-area: btnlog;
+    padding: 2rem;
+}
 
-#logg .btn-login{
-    
+#logg .btn-log{
     background-color: var(--spaceCadet-color);
-    border-color: #2CA3AB;
     border-style: solid;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    display: block;
-    margin: auto;
+    margin: auto;  
+}
+.btn-log a{
+    margin:20px 0;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
 }
 
+.btn-log:hover{
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.61), 0 5px 5px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+.lg1{
+    margin: 20px auto;
+    display: flex;
+
+}
 #log{
+    grid-area: login;
+}
+.login{
     background-color: white;
     align-items: center;
-    max-width: 480px;
-    width: auto;
-    height: auto;
+    max-width: 450px;
+
     border-radius: 30px;
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     padding-bottom: 1rem;
-    grid-area: l2;
+
 }
 
 .login .logo{
@@ -529,16 +542,22 @@ p{
     }
   }
  
-/*-------------------- |DASHBOARD| ---------------------*/
-.main{
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° | DASHBOARD | *°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+#dash{
     display: flex;
     margin: bottom 0; 
-}
+ 
 
+}
+.deregeneral{
+
+
+}
 .izq{
     padding: 3rem 0;
     width: 25%;
-    height: 560px;
+    height: auto;
     background-color: var(--spaceCadet-color);
 }
 .izq img{
@@ -571,6 +590,13 @@ p{
     font-size: 18px;
 }
 
+.franjaNaranja3{
+    background-image: url("../img/12.\ franja.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70px;
+
+}
 .btn3 a{
     text-decoration: none;
     color: black;
@@ -1144,7 +1170,7 @@ select{
     }
     
    
-    .covid{
+    .infoba{
         padding: 2rem 7rem;
     }
     .tabla1 h1{
@@ -1218,7 +1244,7 @@ select{
         
         
     
-    .covid{
+    .infoba{
         
         flex-direction: row;
         
@@ -1253,16 +1279,7 @@ select{
     }
     
 }
-.footer .footer1{
-background-color: black;
-padding: 0px 10px 20px 10px;
-font-family: 'Poppins', sans-serif;
-font-weight: 300;
-color: rgb(255, 255, 255);
-text-align: center;
-vertical-align: top;
-font-size: 13px;
-}
+
 /* :::::::::::::::::::::::::::::::::: ¿Seguro? :::::::::::::::::::::::::::::::::::::::: */
 
 .buttons{
